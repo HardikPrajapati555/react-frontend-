@@ -20,7 +20,7 @@ const Orders = () => {
           },
         };
 
-        const response = await axios.get("http://localhost:5000/api/orders", config);
+        const response = await axios.get("https://backend-api-a4xs.onrender.com/api/orders", config);
         setOrders(response.data);
 
         const dailySales = {};
