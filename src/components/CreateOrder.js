@@ -38,7 +38,7 @@ const CreateOrder = () => {
         },
       };
 
-      const response = await axios.post("http://localhost:5000/api/orders", formData, config);
+      const response = await axios.post("https://backend-api-a4xs.onrender.com/api/orders", formData, config);
       alert("Order created successfully!");
       console.log(response.data);
     } catch (err) {
